@@ -1,0 +1,270 @@
+/* Default styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    height: 800px;
+}
+
+.welcome-heading {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-intro {
+    text-align: center;
+    padding: 50px 0;
+    overflow-y: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.carousel-card {
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+.carousel-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.carousel-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carousel-card p {
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.nav-flex-row {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Reservation section styles */
+.reservation-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.reservation-intro {
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Hide reservation */
+.reservation-confirmation {
+    display: none;
+}
+
+/* Display reservation confirmation section */
+.reservation-confirmation:target {
+    display: block;
+}
+
+/* Navigation styles */
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/*background to the whole screen */
+body {
+    background-image: url(img/cafe6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Section Intro styles */
+.section-intro {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ec0e0e;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+/* About Section styles */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #070707c0;
+    padding: 50px 30px;
+
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.6em;
+    text-transform: fixed;
+    height: 280px;
+}
+
+.contact-info,
+.opening-times {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.contact-info p span,
+.opening-times p span {
+    display: block;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+    .section-intro {
+        height: 320px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .contact-info p span,
+    .opening-times p span {
+        font-size: 15px;
+        text-align: center;
+    }
+}
