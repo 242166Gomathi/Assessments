@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('https://th.bing.com/th/id/R.d5368433ae1c23a94417c112714e8014?rik=C%2blqInFt4z6U%2fQ&riu=http%3a%2f%2fprintablegraphics.in%2fwp-content%2fuploads%2f2018%2f01%2fHtml-background-images-in-blue-shades.jpg&ehk=TRrDz3mOtE9oLEdm9co2WItRm9Y9qN4h9g9whRfbgag%3d&risl=&pid=ImgRaw&r=0.jpg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #083563;
+    color: #fff;
+
+}
+
+.button:hover {
+    background-color: #333435;
+
+}

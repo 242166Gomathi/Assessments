@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <div class="profile-cards">
+            <div class="profile-field">
+                <i class="fas fa-user"></i>
+                <label for="firstName">First Name:</label>
+                <p id="firstName" class="profile-value" readonly></p>
+            </div>
+            <div class="profile-field">
+                <i class="fas fa-user"></i>
+                <label for="lastName">Last Name:</label>
+                <p id="lastName" class="profile-value" readonly></p>
+            </div>
+            <div class="profile-field">
+                <i class="fas fa-calendar-alt"></i>
+                <label for="dob">Date of Birth:</label>
+                <p id="dob" class="profile-value" readonly></p>
+            </div>
+            <div class="profile-field">
+                <i class="fas fa-venus-mars"></i>
+                <label for="gender">Gender:</label>
+                <p id="gender" class="profile-value" readonly></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>

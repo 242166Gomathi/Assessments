@@ -1,0 +1,140 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #cbd6ed;
+  background-image: url('https://th.bing.com/th/id/OIP.oVzBFcjPzkrNa1-t5ij_zwHaEK?rs=1&pid=ImgDetMain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+p {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+
+a {
+  color: #95004d;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+
+label {
+  font-weight: initial;
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="radio"] {
+  width: calc(100% - 12px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+
+input[type="password"] {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #083563;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn:hover {
+  background-color: #333435;
+}
+
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+
+.profile-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-field i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.profile-field label {
+  font-weight: bold;
+  width: 120px;
+}
+
+.profile-field p {
+  margin: 0;
+}
+
+.profile-field p.profile-value {
+  font-weight: bold;
+  color: #555;
+}
