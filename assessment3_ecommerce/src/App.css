@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding-top: 110px; 
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.product-list {
+  display: flex;
+  /* flex-wrap:nowrap; */
+  justify-content: space-around;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 20px;
+  width: 300px;
+}
+
+.product-image {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  margin-top: 1px;
+  font-size: smaller;
+  text-align: center;
+}
+
+.type-rating {
+  margin-top: 8px;
+  font-size: smaller;
+  text-align: center;
+}
+
+.price {
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  height: 30px;
+  width: 80px;
+  font-weight: bold;
+  background-color: rgb(11, 61, 97);
+  color: #e0dddd;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+.button.like {
+  background-color: #4CAF50; 
+}
+
+.button.share {
+  background-color: #3b5998; 
+}
+
+.button.purchase {
+  background-color: #f44336; 
+}
+
+.button:active {
+  transform: translateY(2px);
+}
